@@ -117,6 +117,18 @@ img{
     margin-top: 2vh;
 }
 
+/* Titulo Preco */
+
+.titulo-preco{
+    display: block;
+    max-width: 1024px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 3em;
+    -webkit-text-stroke:1px #fff;
+    padding: 2vh;
+}
+
 /* Preços */
 
 .preco{
@@ -124,29 +136,21 @@ img{
     flex-wrap: wrap;
     max-width: 1024px;
     margin: 0 auto;
-    align-items: flex-end;
-}
-
-.preco h1{
-    flex: 1 1 100vw;
-    font-size: 4.5em;
-    text-align: center;
-    -webkit-text-stroke:1px #fff;
-    padding: 5vh;
 }
 
 .preco-item{
     flex: 1 1 300px;
-    position: relative;
+    flex-wrap: wrap;
+    min-width: 300px;
+    margin: 10px 3vw 30px 3vw;
     border: 10px double #000;
     background-color: #d8d8d8;
-    margin: 10px 10px 30px 10px;
 }
 
 .preco-item h2{
     text-align: center;
     font-size: 3em;
-    margin-bottom: vh;
+    margin-bottom: 1vh;
 }
 
 .preco-item span{
@@ -160,11 +164,17 @@ img{
     margin-bottom: 1.5vh;
 }
 
+.preco-item sup{
+    font-size: 1.5rem;
+}
+
 .preco-item ul{
     list-style: none;
-    text-align: justify;
+    max-width: 250px;
+    margin: 0 auto;
     padding: 15px;
     font-size: 1.25em;
+    line-height: 1.2;
 }
 
 .preco-item a{
@@ -174,7 +184,7 @@ img{
     background-color: #363636;
     color: #ffffff;
     font-size: 2.25em;
-    width: max(50vw, 2.25em);
+    max-width: max(25vh, 5em);
     text-align: center;
     margin: 2vh auto;
 }
